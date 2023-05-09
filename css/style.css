@@ -1,0 +1,138 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; 
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #090b1a;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+}
+
+.container {
+    height: 40rem;
+    width: 100rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #1b1938;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+
+
+
+
+
+.text-area {
+    padding: 6rem;
+}
+
+.main-header {
+    font-size: 3rem;
+    margin-bottom: 2.5rem;
+}
+
+#different {
+    color: #aa5cdb;
+}
+
+.text {
+    font-size: 1.5rem;
+    opacity: .5;
+    margin-bottom: 5rem;
+}
+
+.metrics {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    text-align: center;
+}
+
+.bigger {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.smaller {
+    text-transform: uppercase;letter-spacing: 2px;
+    opacity: .5;
+}
+
+.image-area {
+    position: relative;
+    background-image: url(/img/image-header-desktop.jpeg);
+    background-size: cover;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+}
+
+.overlay {
+    background-color: #7508a3;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: .5;
+}
+
+@media screen and (max-width: 992px) {
+    html {
+        font-size: 52%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        height: auto;
+    }
+    
+    .container {
+        grid-template-rows: 30% 1fr;
+        grid-template-columns: 1fr;
+        margin: 5rem 3rem;
+        height: 90rem;
+        text-align: center;
+    }
+
+    .image-area {
+        grid-row: 1 / 2;
+    }
+
+    .metrics {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .metrics div {
+        margin-bottom: 4rem;
+    }
+
+    .bigger {
+        font-size: 4rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .metrics div {
+        margin-bottom: 1rem;
+    }
+}
