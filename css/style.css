@@ -75,7 +75,7 @@ body {
 
 .image-area {
     position: relative;
-    background-image: url(/img/image-header-desktop.jpeg);
+    background-image: url(../img/image-header-desktop.jpeg);
     background-size: cover;
 }
 
